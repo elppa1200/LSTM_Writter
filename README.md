@@ -26,6 +26,6 @@ https://drive.google.com/drive/folders/1pWu29J9kVjizgeuL3KnR2sm1YDxC9Vct?usp=sha
 
 # 필요로 하는 라이브러리
 Keras - Cuda v.11  
-Newspaper3k
-gensim
+Newspaper3k  
+gensim  
 Python 3.6  
