@@ -19,8 +19,8 @@ https://developers.naver.com/docs/search/blog/
 5. 모델에서 그 본문 중 랜덤한 지점에서 연속된 10글자를 추출하고 Input으로 삼는다.  
 6. 그 10글자에 대해서 작문을 해 Output으로 삼는다.  
 
-# lstm_writter.h5와 josntext.txt
-모델과 자료파일은 100mb에 근사하거나 초과하므로  
+# lstm_writter.h5와 jsontext.txt
+모델과 자료파일은 100mb에 근사하거나 초과하므로 깃헙에 업로드가 불가함.  
 아래 링크의 구글 드라이브에서 따로 다운받아 코드와 같은 위치에 저장할 것.  
 https://drive.google.com/drive/folders/1pWu29J9kVjizgeuL3KnR2sm1YDxC9Vct?usp=sharing
 
