@@ -61,7 +61,6 @@ print(model.summary())
 #보통 멀티 클래스에서 하나의 클래스를 구분할 때 softmax랑 ce 조합을 많이 사용한다고 함
 model.compile(loss='categorical_crossentropy', optimizer=RMSprop(lr=0.001))
 #클래스가 2개일 때 시그모이드와 소맥은 같은 식이 됨
-#https://ebbnflow.tistory.com/135
 
 
 
@@ -84,7 +83,7 @@ def sample(preds, temperature=1.0):
 def on_epoch_end(epoch, _):
     print('\nEpoch : ' + str(epoch))
 
-    start_index = random.randint(0, len(jsontext) - maxlen - 1)#랜덤으로 40글자를 뽑고
+    start_index = random.randint(0, len(jsontext) - maxlen - 1)#랜덤으로 10글자를 뽑고
 #     for diversity in [0.2, 0.5, 1.0, 1.2]:
 #         print('----- diversity:', diversity)
 
@@ -114,11 +113,10 @@ def on_epoch_end(epoch, _):
 
 print_callback = LambdaCallback(on_epoch_end=on_epoch_end)#람다콜백에 등록하고 변수에 넣음
 
-model.fit(x, y, batch_size=128, epochs=200, callbacks=[print_callback])#60번 반복할거고
-'''
+model.fit(x, y, batch_size=128, epochs=200, callbacks=[print_callback])#200번 반복할거고
+
 model_json = model.to_json()
 with open("lstmwritter.json", "w") as json_file : 
     json_file.write(model_json)
 
 model.save('lstm_writter.h5')
-'''
