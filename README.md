@@ -5,7 +5,8 @@
  
 # 모두의 말뭉치
 https://corpus.korean.go.kr/main.do  
-에서 데이터셋을 다운받을 수 있으며 본 프로젝트는 이 데이터셋을 사용하여 학습했습니다.
+에서 데이터셋을 다운받을 수 있으며 본 프로젝트는 이 데이터셋을 사용하여 학습했습니다.    
+이 자료를 사용한 작품의 공개 허가를 받았습니다.
 
 # Naver Crawler
 https://developers.naver.com/docs/search/blog/  
